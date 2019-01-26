@@ -5,11 +5,11 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-//require __DIR__."/vendor/autoload.php";
-//use Monolog\Logger;
-//use Monolog\Handler\StreamHandler;
-//use Monolog\Handler\FirePHPHandler;
-//use \Statickidz\GoogleTranslate;
+require __DIR__."/vendor/autoload.php";
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+use Monolog\Handler\FirePHPHandler;
+use \Statickidz\GoogleTranslate;
 use LINE\LINEBot;
 use LINE\LINEBot\HTTPClient;
 use LINE\LINEBot\HTTPClient\CurlHTTPClient;
@@ -43,8 +43,8 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
 use LINE\LINEBot\MessageBuilder\Flex;
 use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder;
-//$logger = new Logger('LineBot');
-//$logger->pushHandler(new StreamHandler('php://stderr', Logger::DEBUG));
+$logger = new Logger('LineBot');
+$logger->pushHandler(new StreamHandler('php://stderr', Logger::DEBUG));
 
 define("MLAB_API_KEY", '6QxfLc4uRn3vWrlgzsWtzTXBW7CYVsQv');
 define("LINE_MESSAGING_API_CHANNEL_SECRET", '82d7948950b54381bcbd0345be0d4a2c');
