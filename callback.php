@@ -43,8 +43,8 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
 use LINE\LINEBot\MessageBuilder\Flex;
 use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder;
-$logger = new Logger('LineBot');
-$logger->pushHandler(new StreamHandler('php://stderr', Logger::DEBUG));
+//$logger = new Logger('LineBot');
+//$logger->pushHandler(new StreamHandler('php://stderr', Logger::DEBUG));
 
 define("MLAB_API_KEY", '6QxfLc4uRn3vWrlgzsWtzTXBW7CYVsQv');
 define("LINE_MESSAGING_API_CHANNEL_SECRET", '82d7948950b54381bcbd0345be0d4a2c');
